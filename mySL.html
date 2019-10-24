@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mySL</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="logoSLbeneran.png">
+
+</head>
+<body class="center backgroundc">
+    <div class="center box">
+        <img class="logo" src="logoSLbeneran.png" alt="no image found">
+        <h3 class="heading">mySL Asiata</h3>
+        <form id="form1" action="home.html">
+            <input class="input" type="tel" name="" id="notelp" placeholder="Phone Number" pattern="[0-9]{12}" required>
+            <input class="input" type="password" name="" id="password" placeholder="Password" required>   
+            <input class="submitbtn" type="submit" value="Login" id="loginbtn">
+        </form>
+    </div>
+    <footer class="futer">
+            Rashad Altaira Wardhana - 2201831411 - BA03
+            <br>
+            &copy2019 mySL Asiata Intelectual Property. All rights reserved.
+    </footer>
+    <script>
+        const loginbtn = document.getElementById("loginbtn");
+
+        loginbtn.onclick = () => {
+            window.localStorage.setItem("phonenumber", document.getElementById("notelp").value); 
+        }        
+    </script>
+</body>
+</html>

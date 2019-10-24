@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="logoSLbeneran.png">
+</head>
+<body style="background-color: antiquewhite" class="body">
+    <nav class="nav">
+        <img class="logo2" src="logoSLinside.png" alt="">
+        <ul class="padding">
+            <a href="home.html" class="navbtn">
+                Home
+            </a>
+            <a href="myPackage.html"class="navbtn">
+                myPackage
+            </a>
+            <a href="promo.html" class="navbtn">
+                Promo
+            </a>
+            <a href="feedback.html" class="navbtn">
+                Feedback
+            </a>
+            <a href="mySL.html" class="navbtn">
+                Logout
+            </a>
+        </ul>
+    </nav>
+    <main class=" padding">
+        <!-- <img src="jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt=""> -->
+        <h1 class="header">Home</h1>
+        <div class="home">
+            <div class="homeinfo">
+                <img src="profpic.jpg" alt="" class="profpic">
+                <h3>Rashad Altaira Wardhana</h3>
+                <h3 id="notelp"></h3>
+                <h3>Balance: Rp20.000</h3>
+            </div>
+            <br>
+            <div class="general">
+                <div class="pilihpaket">
+                    <h3 class="judul">Choose your package</h3>
+                    <hr>
+                    <div class="info"> 
+                        <button id="pilihpaketh">Internet</button>
+                        
+                        <button id="pilihpaketh">Call</button>
+                        
+                        <button id="pilihpaketh">SMS</button>
+                        
+                        <button id="pilihpaketh">Roaming</button>
+                    </div>
+                </div>
+                <div class="pilihpaket">
+                    <h3 class="judul">Recommended for you</h3>
+                    <hr>
+                    <div class="paketrek">   
+                        <button class="paketrekc bordertambahan paketrekh">
+                            <p>Internet WOW</p>
+                            <p class="kuota">14 GB</p>
+                            <p class="harga">Rp90.000</p>
+                        </button>
+                        <button class="paketrekc bordertambahan paketrekh">
+                            <p>Combo WOW</p>
+                            <p class="kuota">19 GB</p>
+                            <p class="harga">Rp120.000</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="futer futerhome">
+        Rashad Altaira Wardhana - 2201831411 - BA03
+        <br>
+        &copy2019 mySL Asiata Intelectual Property. All rights reserved.
+    </footer>
+    <script>
+        document.getElementById("notelp").innerHTML = window.localStorage.getItem("phonenumber");
+    </script>
+</body>
+</html>
